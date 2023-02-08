@@ -1,4 +1,6 @@
 import Header from "./components/Header/Header"
+import Nav from "./components/Nav/Nav"
+import Layout from "./Layout/Layout"
 
 
 function App() {
@@ -7,6 +9,9 @@ function App() {
   return (
    <> 
      <Header />
+     <Layout>
+      <Nav />
+     </Layout>
    </>
   )
 }
