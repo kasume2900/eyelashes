@@ -35,3 +35,17 @@
 .burger {
   @apply text-3xl md:hidden ;
 }
+
+
+.burgerNav {
+  @apply fixed top-0 right-0 left-0 bottom-0 bg-slate-50 transition-all duration-500 
+    flex flex-col items-center justify-center border-l-2;
+}
+
+.close {
+  @apply absolute top-7 right-3 text-3xl ;
+}
+
+.item {
+  @apply uppercase font-bold mb-10 ;
+}
