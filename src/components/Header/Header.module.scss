@@ -1,0 +1,37 @@
+
+.header {
+  @apply border-b-[1px] px-2; 
+}
+
+.row {
+  @apply flex justify-between items-center ; 
+
+  .logo {
+
+    img {
+      @apply w-24 ;
+    }
+  }
+
+  .body {
+    @apply flex ;
+
+    .titleAdresWrap {
+      @apply mr-5 hidden  md:block; 
+      .title{}
+      .adres{}
+    
+    }
+  }
+
+  .btn {
+    background-color: #000;
+    color: #fff;
+    @apply px-4 py-2 rounded-md hidden md:block ;
+  }
+}
+
+
+.burger {
+  @apply text-3xl md:hidden ;
+}
