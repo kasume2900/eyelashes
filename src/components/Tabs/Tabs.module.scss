@@ -1,0 +1,14 @@
+
+
+.tabTop {
+  @apply flex space-x-4 border-b-2 ;
+
+  .tab {
+    @apply w-32 text-center cursor-pointer ;
+  }
+}
+
+
+.content {
+  @apply grid grid-cols-4 ;
+}

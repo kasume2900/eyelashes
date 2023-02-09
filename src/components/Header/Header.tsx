@@ -34,10 +34,6 @@ export default function Header() {
             {nav.map(el => <div className={s.item} key={el}>{el}</div>)}
             <AiOutlineClose onClick={() => setActive(false)} className={s.close} />
           </div>
-        
-
-
-
       </Layout>
     </header>
   )
