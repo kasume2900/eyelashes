@@ -6,6 +6,6 @@ interface ILayoutProps {
 
 export default function Layout({children} : ILayoutProps) {
   return (
-    <div className='max-w-screen-xl mx-auto'>{children}</div>
+    <div className='max-w-screen-xl mx-auto px-4'>{children}</div>
   )
 }

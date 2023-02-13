@@ -1,14 +1,17 @@
 
 
 .tabTop {
-  @apply flex space-x-4 border-b-2 ;
+  @apply hidden md:flex w-1/2 border-b-2 justify-center mx-auto mb-8 pb-4 ;
 
   .tab {
-    @apply w-32 text-center cursor-pointer ;
+    @apply w-32 text-center cursor-pointer mb-2 relative;
   }
 }
 
 
+
+
+
 .content {
-  @apply grid grid-cols-4 ;
+  @apply flex flex-col md:flex-row md:flex-wrap justify-center gap-4;
 }

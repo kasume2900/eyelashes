@@ -1,10 +1,10 @@
 
 .wrap {
-  @apply w-[275px] bg-slate-100 px-4 py-4 rounded-sm ;
+  @apply bg-slate-100 px-4 py-4 rounded-sm w-full md:w-[48%] xl:w-[30%] 2xl:w-[24%] ;
   .image {
     @apply mb-4 ;
     img {
-      @apply rounded-full ;
+      @apply rounded-full w-[200px] h-[200px] object-cover mx-auto ;
     }
   }
 
