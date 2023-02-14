@@ -1,0 +1,21 @@
+
+
+.wrap {
+  @apply max-w-[450px] h-[450px] w-full m-auto py-16 px-4 relative md:max-w-[700px] md:h-[550px] lg:max-w-[900px] lg:h-[600px] ;
+}
+
+.item {
+  @apply w-full h-full rounded-2xl bg-center bg-cover duration-500 ;
+}
+
+.right {
+  @apply text-6xl absolute top-1/2 right-0 -translate-y-1/2 cursor-pointer  ;
+}
+
+.left {
+  @apply text-6xl absolute top-1/2 left-0 -translate-y-1/2 cursor-pointer  ;
+}
+
+.text {
+  @apply text-center ;
+}
