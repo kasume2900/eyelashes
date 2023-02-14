@@ -1,0 +1,14 @@
+
+.wrap {
+  background-color: var(--bg-footer);
+  color: white;
+  @apply py-4 ;
+}
+
+.title {
+  @apply text-center mb-6 font-bold ;
+}
+
+.item {
+  @apply mb-2 ;
+}

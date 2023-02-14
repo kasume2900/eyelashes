@@ -8,6 +8,7 @@ import {useState} from 'react'
 import Slaider from "./components/Slaider/Slaider"
 import Concept from "./components/Concept/Concept"
 import Questions from "./components/Questions/Questions"
+import Footer from "./components/Footer/Footer"
 
 
 function App() {
@@ -28,8 +29,9 @@ function App() {
       <Tabs active={active} tabSelected={tabSelected} />
       <Slaider />
       <Concept />
-      <Questions />
      </Layout>
+      <Questions />
+      <Footer />
    </>
   )
 }

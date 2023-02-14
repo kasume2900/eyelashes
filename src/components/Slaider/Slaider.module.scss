@@ -9,13 +9,13 @@
 }
 
 .right {
-  @apply text-6xl absolute top-1/2 right-0 -translate-y-1/2 cursor-pointer  ;
+  @apply  absolute top-1/2 right-0 -translate-y-1/2 cursor-pointer  ;
 }
 
 .left {
-  @apply text-6xl absolute top-1/2 left-0 -translate-y-1/2 cursor-pointer  ;
+  @apply  absolute top-1/2 left-0 -translate-y-1/2 cursor-pointer  ;
 }
 
 .text {
-  @apply text-center ;
+  @apply text-center mt-4 ;
 }

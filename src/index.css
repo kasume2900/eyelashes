@@ -7,6 +7,11 @@
 :root {
   --bg-color : #000;
   --color : #fff;
+  --text-red : #fe1020;
+  --bg-red : #fe1020;
+  --bg-gray : #f7f7f7;
+  --bg-que : #efefef;
+  --bg-footer : #1d2e3f;
 }
 
 body {

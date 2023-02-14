@@ -1,7 +1,7 @@
 
 
 .tabTop {
-  @apply hidden md:flex w-1/2 border-b-2 justify-center mx-auto mb-8 pb-4 ;
+  @apply hidden lg:flex lg:w-full lg:justify-between w-1/2 border-b-2 justify-center mx-auto mb-8 pb-4 ;
 
   .tab {
     @apply w-32 text-center cursor-pointer mb-2 relative;

@@ -2,7 +2,7 @@ import React from 'react'
 import s from './Slaider.module.scss'
 import {slaides} from '../../utils/slides'
 import {MdOutlineKeyboardArrowRight} from 'react-icons/md'
-import {MdOutlineKeyboardArrowLeft} from 'react-icons/md' 
+import {RiArrowLeftSLine} from 'react-icons/ri' 
 
 import {useState} from 'react'
 
@@ -27,7 +27,7 @@ export default function Slaider() {
     <div className={s.wrap}>
       <div style={{backgroundImage : `url(${slaides[active].img})`}} className={s.item}></div>
       <MdOutlineKeyboardArrowRight onClick={nextSlade} className={s.right} />
-      <MdOutlineKeyboardArrowLeft onClick={prevSlade} className={s.left} />
+      <RiArrowLeftSLine onClick={prevSlade} className={s.left} />
       <p className={s.text}>{slaides[active].title}</p>
     </div>
   )

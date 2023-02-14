@@ -1,6 +1,6 @@
 
 .nav {
- @apply justify-center items-center space-x-10 mt-10 hidden md:flex ;
+ @apply justify-center items-center space-x-10 mt-10 hidden md:flex mb-4 ;
 
   .item {
     @apply cursor-pointer uppercase font-bold ;
