@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import s from './Slaider.module.scss'
 import {slaides} from '../../utils/slides'
 import {MdOutlineKeyboardArrowRight} from 'react-icons/md'
 import {RiArrowLeftSLine} from 'react-icons/ri' 
 
 import {useState} from 'react'
+import Carousel from '../Carousel/Carousel'
 
 export default function Slaider() {
 
   const [active ,setActive] = useState(0)
+
 
   const nextSlade = () => {
     const isLastSlade = active === slaides.length - 1
@@ -25,10 +27,10 @@ export default function Slaider() {
 
   return (
     <div className={s.wrap}>
-      <div style={{backgroundImage : `url(${slaides[active].img})`}} className={s.item}></div>
-      <MdOutlineKeyboardArrowRight onClick={nextSlade} className={s.right} />
-      <RiArrowLeftSLine onClick={prevSlade} className={s.left} />
-      <p className={s.text}>{slaides[active].title}</p>
+      <Carousel autoSlade={true} autoSladeInterval={3000}>
+        {slaides.map(el => <img className={s.img} src={el.img} alt="image" />)}
+      </Carousel>
+      
     </div>
   )
 }
