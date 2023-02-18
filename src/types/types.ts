@@ -15,5 +15,6 @@ export interface ITabs {
 
 export interface ISlides {
   img : string
-  title : string
+  title : string,
+  id : number
 }
