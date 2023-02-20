@@ -4,7 +4,7 @@ import s from './Footer.module.scss'
 
 export default function Footer() {
   return (
-    <footer className={s.wrap}>
+    <footer id='contacts' className={s.wrap}>
       <Layout>
         <h3 className={s.title}>ЕСЛИ ОСТАЛИСЬ ВОПРОСЫ, БУДЕМ РАДЫ НА НИХ ОТВЕТИТЬ</h3>
         <div>

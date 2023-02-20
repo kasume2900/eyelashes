@@ -3,14 +3,23 @@ import Layout from '../../Layout/Layout'
 import logo from '../../assets/logo.png'
 import s from './Header.module.scss'
 import { GiHamburgerMenu } from 'react-icons/gi'
-import {AiOutlineClose} from 'react-icons/ai'
-import Nav from '../Nav/Nav'
+import { AiOutlineClose } from 'react-icons/ai'
+import { Link } from 'react-scroll'
+
+
+
+
 
 export default function Header() {
 
   const nav = ['ресницы', 'брови', 'ногти', 'о нас', 'контакты']
 
   const [active, setActive] = useState(false)
+
+  const handleClick = () => {
+    setActive(false)
+
+  }
 
 
 
@@ -31,9 +40,13 @@ export default function Header() {
           </div>
         </div>
         <div className={`${s.burgerNav} ${active ? '' : 'translate-x-full'}`}>
-            {nav.map(el => <div className={s.item} key={el}>{el}</div>)}
-            <AiOutlineClose onClick={() => setActive(false)} className={s.close} />
-          </div>
+          <Link to='1' onClick={handleClick} spy={true} smooth={true} offset={50} duration={500} className={s.item}>ресницы</Link>
+          <Link to='2' spy={true} smooth={true} offset={50} duration={500} className={s.item}>брови</Link>
+          <Link to='3' spy={true} smooth={true} offset={50} duration={500} className={s.item}>ногти</Link>
+          <Link to='about' onClick={handleClick} spy={true} smooth={true} offset={0} duration={500} className={s.item}>о нас</Link>
+          <Link to='contacts' onClick={handleClick} spy={true} smooth={true} offset={50} duration={500} className={s.item}>контакты</Link>
+          <AiOutlineClose onClick={() => setActive(false)} className={s.close} />
+        </div>
       </Layout>
     </header>
   )
