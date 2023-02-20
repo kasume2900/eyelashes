@@ -43,8 +43,8 @@ export default function Header() {
           <Link to='1' onClick={handleClick} spy={true} smooth={true} offset={50} duration={500} className={s.item}>ресницы</Link>
           <Link to='2' spy={true} smooth={true} offset={50} duration={500} className={s.item}>брови</Link>
           <Link to='3' spy={true} smooth={true} offset={50} duration={500} className={s.item}>ногти</Link>
-          <Link to='about' onClick={handleClick} spy={true} smooth={true} offset={0} duration={500} className={s.item}>о нас</Link>
-          <Link to='contacts' onClick={handleClick} spy={true} smooth={true} offset={50} duration={500} className={s.item}>контакты</Link>
+          <Link to='about' onTouchStart={handleClick} spy={true} smooth={true} offset={0} duration={500} className={s.item}>о нас</Link>
+          <Link to='contacts' onTouchStart={handleClick} spy={true} smooth={true} offset={50} duration={500} className={s.item}>контакты</Link>
           <AiOutlineClose onClick={() => setActive(false)} className={s.close} />
         </div>
       </Layout>
