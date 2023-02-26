@@ -1,6 +1,7 @@
 
 .header {
-  @apply border-b-[1px] px-2; 
+  @apply border-b-[1px] px-2 fixed top-0 w-full z-50 ;
+  background-color: #fff;
 }
 
 .row {
