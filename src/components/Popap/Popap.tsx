@@ -23,7 +23,7 @@ export default function Popap({ tabs, active,tabSelected }: IPopapProps) {
 
 
   return (
-    <div className={s.popapWrap}>
+    <div id='eyelash' className={s.popapWrap}>
       <div onClick={() => setVizible(!vizible)} className={s.top}>
         <div className={s.filter}>{tabs[active].filter}</div>
         <div className={s.icon}>

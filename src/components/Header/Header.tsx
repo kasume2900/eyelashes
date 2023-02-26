@@ -7,10 +7,14 @@ import { AiOutlineClose } from 'react-icons/ai'
 import { Link } from 'react-scroll'
 
 
+interface IHeaderProps {
+  tabSelected : (index : number) => void
+}
 
 
 
-export default function Header() {
+export default function Header({tabSelected} :IHeaderProps) {
+  const testAttr = {'data-attr': 'value'}
 
   const nav = ['ресницы', 'брови', 'ногти', 'о нас', 'контакты']
 
@@ -18,9 +22,17 @@ export default function Header() {
 
   const handleClick = () => {
     setActive(false)
-
   }
 
+  const handleClickToTabs = (e : any) => {
+    const { id } = e.target.dataset 
+    setActive(false)
+    tabSelected(+id)
+  }
+
+
+
+  
 
 
   return (
@@ -40,9 +52,9 @@ export default function Header() {
           </div>
         </div>
         <div className={`${s.burgerNav} ${active ? '' : 'translate-x-full'}`}>
-          <Link to='1' onClick={handleClick} spy={true} smooth={true} offset={50} duration={500} className={s.item}>ресницы</Link>
-          <Link to='2' spy={true} smooth={true} offset={50} duration={500} className={s.item}>брови</Link>
-          <Link to='3' spy={true} smooth={true} offset={50} duration={500} className={s.item}>ногти</Link>
+          <Link data-id='0' to='eyelash' onTouchStart={handleClickToTabs} spy={true} smooth={true} offset={50} duration={500} className={s.item}>ресницы</Link>
+          <Link data-id='2'  to='eyelash' onTouchStart={handleClickToTabs} spy={true} smooth={true} offset={50} duration={500} className={s.item}>брови</Link>
+          <Link data-id='3' to='eyelash' onTouchStart={handleClickToTabs} spy={true} smooth={true} offset={50} duration={500} className={s.item}>ногти</Link>
           <Link to='about' onTouchStart={handleClick} spy={true} smooth={true} offset={0} duration={500} className={s.item}>о нас</Link>
           <Link to='contacts' onTouchStart={handleClick} spy={true} smooth={true} offset={50} duration={500} className={s.item}>контакты</Link>
           <AiOutlineClose onClick={() => setActive(false)} className={s.close} />

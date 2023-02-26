@@ -12,8 +12,21 @@
   --bg-gray : #f7f7f7;
   --bg-que : #efefef;
   --bg-footer : #1d2e3f;
+
+  --swiper-navigation-size : 25px;
+  --swiper-pagination-color: red;
 }
 
 body {
   @apply font-roboto ;
+}
+
+.swiper-button-next {
+  color: red;
+}
+.swiper-button-next ::after {
+  width: 10px;
+}
+.swiper-button-prev {
+  color: red;
 }

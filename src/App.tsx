@@ -24,7 +24,7 @@ function App() {
 
   return (
    <> 
-     <Header/>
+     <Header tabSelected={tabSelected}/>
      <Layout>
       <Nav />
       <Popap tabs={tabs} active={active} tabSelected={tabSelected} />
