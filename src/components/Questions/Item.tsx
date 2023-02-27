@@ -1,5 +1,5 @@
 import React from 'react'
-
+import s from './Item.module.scss'
 
 interface IItemProps {
   title: string
@@ -8,9 +8,9 @@ interface IItemProps {
 
 export default function Item({descr,title} : IItemProps) {
   return (
-    <div className='bg-white px-4 py-12 shadow-md'>
-      <h3 className='font-bold text-center mb-6 text-2xl'>{title}</h3>
-      <p className='text-center'>{descr}</p>
+    <div className={s.wrap}>
+      <h3 className={s.title}>{title}</h3>
+      <p className={s.descr}>{descr}</p>
     </div>
   )
 }

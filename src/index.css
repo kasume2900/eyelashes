@@ -18,7 +18,9 @@
 }
 
 body {
-  @apply font-roboto ;
+  background-color: var( --bg-color-body);
+  color: var(--text-color);
+  @apply font-roboto transition-colors duration-700;
 }
 
 .swiper-button-next {
@@ -29,4 +31,39 @@ body {
 }
 .swiper-button-prev {
   color: red;
+}
+
+
+
+html[data-theme='light'] {
+  --bg-color-body : #fff;
+  --bg-color-el : #fff;
+  --btn-bg : #000;
+  --btn-color-text : #fff;
+  --color-burger : #000;
+  --bg-color-burger : rgb(248 250 252);
+  --text-color : #000;
+  --border-bg-red :  #fe1020;
+  --text-red : #fe1020;
+  --bg-gray : #f7f7f7;
+  --bg-que : #efefef;
+  --bg-footer : #1d2e3f;
+  --text-color-footer : #fff;
+}
+
+
+html[data-theme='dark'] {
+  --bg-color-body : #3a1010;
+  --bg-color-el : #000;
+  --btn-bg : #6e1818;
+  --btn-color-text : #fff;
+  --color-burger : #fff;
+  --bg-color-burger : rgb(5, 74, 143);
+  --text-color : #fff;
+  --border-bg-red :  #fe1020;
+  --text-red : #fe1020;
+  --bg-gray : #16a355;
+  --bg-que : #1731a7;
+  --bg-footer : #041a30;
+  --text-color-footer : #fff;
 }

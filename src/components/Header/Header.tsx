@@ -1,11 +1,13 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Layout from '../../Layout/Layout'
 import logo from '../../assets/logo.png'
 import s from './Header.module.scss'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { AiOutlineClose } from 'react-icons/ai'
 import { Link } from 'react-scroll'
-
+import { useTheme } from '../../hooks/useTheme'
+import {BsMoonStarsFill} from 'react-icons/bs'
+import {ImSun} from 'react-icons/im'
 
 interface IHeaderProps {
   tabSelected : (index : number) => void
@@ -14,15 +16,23 @@ interface IHeaderProps {
 
 
 export default function Header({tabSelected} :IHeaderProps) {
-  const testAttr = {'data-attr': 'value'}
+ 
+  const {theme,setTheme} = useTheme()
 
-  const nav = ['ресницы', 'брови', 'ногти', 'о нас', 'контакты']
+  const changeTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light')
+  }
 
   const [active, setActive] = useState(false)
 
   const handleClick = () => {
     setActive(false)
   }
+
+  useEffect(() => {
+    const body = document.querySelector('body')
+     active ? body!.style.overflow = "hidden" : body!.style.overflow = "scroll"
+  },[active])
 
   const handleClickToTabs = (e : any) => {
     const { id } = e.target.dataset 
@@ -42,6 +52,7 @@ export default function Header({tabSelected} :IHeaderProps) {
           <div className={s.logo}>
             <img src={logo} alt="logo" />
           </div>
+          <div onClick={changeTheme} className={s.icon}>{theme === 'dark' ? <BsMoonStarsFill /> : <ImSun />}</div>
           <div className={s.body}>
             <div className={s.titleAdresWrap}>
               <p className={s.title}>Наращивание ресниц, брови, перманент,маникюр</p>

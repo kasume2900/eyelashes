@@ -1,7 +1,7 @@
 
 .header {
-  @apply border-b-[1px] px-2 fixed top-0 w-full z-50 ;
-  background-color: #fff;
+  @apply border-b-[1px] px-2 fixed top-0 w-full z-50 transition-colors duration-700 ;
+  background-color: var( --bg-color-el);
 }
 
 .row {
@@ -26,8 +26,8 @@
   }
 
   .btn {
-    background-color: var(--bg-color);
-    color: var(--color);
+    background-color: var( --btn-bg);
+    color: var( --btn-color-text);
     @apply px-4 py-2 rounded-md hidden md:block ;
   }
 }
@@ -35,16 +35,19 @@
 
 .burger {
   @apply text-3xl md:hidden ;
+  color: var( --color-burger);
 }
 
 
 .burgerNav {
-  @apply fixed top-0 right-0 left-0 bottom-0 bg-slate-50 transition-all duration-500 
+  @apply fixed top-0 right-0 left-0 bottom-0 transition-all duration-500 
     flex flex-col items-center justify-center border-l-2 z-40 ;
+    background-color: var(--bg-color-burger);
 }
 
 .close {
   @apply absolute top-7 right-3 text-3xl ;
+  color: var(--color-burger);
 }
 
 .item {

@@ -5,8 +5,9 @@
 }
 
 .top {
-  @apply border px-4 py-2 flex items-center justify-between ;
-  border-color: var(--bg-red);
+  @apply border px-4 py-2 flex items-center justify-between transition-colors duration-700;
+  border-color: var(--border-bg-red);
+  background-color: var(--bg-color-el);
   .filter {
     color: var(--text-red)
   }
@@ -17,12 +18,13 @@
 
 
 .bottom {
-  @apply absolute top-12 left-0  bg-white w-full border;
-  border-color: var(--bg-red);
+  @apply absolute top-12 left-0 w-full border transition-colors duration-700;
+  border-color: var(--border-bg-red);
 
 
   .item {
-    @apply px-5 py-2 ;
+    @apply px-5 py-2 transition-colors duration-700 ;
     color: var(--text-red);
+    background-color: var(--bg-color-el);
   }
 }

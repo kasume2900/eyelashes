@@ -1,8 +1,8 @@
 
 .wrap {
   background-color: var(--bg-footer);
-  color: white;
-  @apply py-4 ;
+  color: var( --text-color-footer);
+  @apply py-4 transition-colors duration-700;
 }
 
 .title {
