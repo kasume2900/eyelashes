@@ -31,7 +31,7 @@ export default function Header({tabSelected} :IHeaderProps) {
 
   useEffect(() => {
     const body = document.querySelector('body')
-     active ? body!.style.overflow = "hidden" : body!.style.overflow = "scroll"
+     active ? body!.style.overflow = "hidden" : body!.style.overflow = "auto"
   },[active])
 
   const handleClickToTabs = (e : any) => {
@@ -52,12 +52,8 @@ export default function Header({tabSelected} :IHeaderProps) {
           <div className={s.logo}>
             <img src={logo} alt="logo" />
           </div>
-          <div onClick={changeTheme} className={s.icon}>{theme === 'dark' ? <BsMoonStarsFill /> : <ImSun />}</div>
           <div className={s.body}>
-            <div className={s.titleAdresWrap}>
-              <p className={s.title}>Наращивание ресниц, брови, перманент,маникюр</p>
-              <p className={s.adres}>Метро: улица 1905 г. (7минут пешком)</p>
-            </div>
+          <div onClick={changeTheme} className={s.icon}>{theme === 'dark' ? <BsMoonStarsFill /> : <ImSun />}</div>
             <button className={s.btn}>Позвонить</button>
             <GiHamburgerMenu onClick={() => setActive(true)} className={s.burger} />
           </div>

@@ -26,7 +26,7 @@ function App() {
    <> 
      <Header tabSelected={tabSelected}/>
      <Layout>
-      <Nav />
+      <Nav tabSelected={tabSelected} />
       <Popap tabs={tabs} active={active} tabSelected={tabSelected} />
       <Tabs active={active} tabSelected={tabSelected} />
       <p id="about" className='py-8 text-2xl text-center'>Наши работы</p>

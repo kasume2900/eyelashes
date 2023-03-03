@@ -35,6 +35,7 @@ body {
 
 
 
+
 html[data-theme='light'] {
   --bg-color-body : #fff;
   --bg-color-el : #fff;
@@ -49,21 +50,23 @@ html[data-theme='light'] {
   --bg-que : #efefef;
   --bg-footer : #1d2e3f;
   --text-color-footer : #fff;
+  --bg-border : #bdb4b4;
 }
 
 
 html[data-theme='dark'] {
-  --bg-color-body : #3a1010;
-  --bg-color-el : #000;
-  --btn-bg : #6e1818;
+  --bg-color-body : #2e2b2b;
+  --bg-color-el : #160d15;
+  --btn-bg : #1f0a33;
   --btn-color-text : #fff;
   --color-burger : #fff;
-  --bg-color-burger : rgb(5, 74, 143);
+  --bg-color-burger : #160d15;
   --text-color : #fff;
   --border-bg-red :  #fe1020;
   --text-red : #fe1020;
-  --bg-gray : #16a355;
-  --bg-que : #1731a7;
+  --bg-gray : #1d1a20;
+  --bg-que : #3a0741;
   --bg-footer : #041a30;
   --text-color-footer : #fff;
+  --bg-border : #940e0e;
 }

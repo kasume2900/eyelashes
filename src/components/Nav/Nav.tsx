@@ -2,16 +2,22 @@ import React from 'react'
 import s from './Nav.module.scss'
 import {Link} from 'react-scroll'
 
-export default function Nav() {
+interface INavProps {
+  tabSelected : (index : number) => void
+}
 
-  const nav = ['ресницы','брови','ногти','о нас','контакты']
+export default function Nav({tabSelected} : INavProps) {
 
+  const handleClickToTabs = (e : any) => {
+    const { id } = e.target.dataset 
+    tabSelected(+id)
+  }
 
   return (
     <nav className={s.nav}>
-      <Link to='1' spy={true} smooth={true} offset={50} duration={500} className={s.item}>ресницы</Link>
-      <Link to='2' spy={true} smooth={true} offset={50} duration={500} className={s.item}>брови</Link>
-      <Link to='3' spy={true} smooth={true} offset={50} duration={500} className={s.item}>ногти</Link>
+      <Link data-id='0' to='eyelash' onClick={handleClickToTabs} spy={true} smooth={true} offset={150} duration={500} className={s.item}>ресницы</Link>
+      <Link data-id='2' to='eyelash' onClick={handleClickToTabs} spy={true} smooth={true} offset={150} duration={500} className={s.item}>брови</Link>
+      <Link data-id='3' to='eyelash' onClick={handleClickToTabs} spy={true} smooth={true} offset={150} duration={500} className={s.item}>ногти</Link>
       <Link to='about' spy={true} smooth={true} offset={0} duration={500} className={s.item}>о нас</Link>
       <Link to='contacts' spy={true} smooth={true} offset={50} duration={500} className={s.item}>контакты</Link>
     </nav>
