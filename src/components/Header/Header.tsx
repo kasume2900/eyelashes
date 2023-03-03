@@ -54,7 +54,8 @@ export default function Header({tabSelected} :IHeaderProps) {
           </div>
           <div className={s.body}>
           <div onClick={changeTheme} className={s.icon}>{theme === 'dark' ? <BsMoonStarsFill /> : <ImSun />}</div>
-            <button className={s.btn}>Позвонить</button>
+
+            <a href='https://api.whatsapp.com/send/?phone=79200000000&text=Здравствуйте%2C+у+меня+есть+вопрос' className={s.btn}>Позвонить</a>
             <GiHamburgerMenu onClick={() => setActive(true)} className={s.burger} />
           </div>
         </div>
