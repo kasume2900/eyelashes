@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Concept() {
   return (
-    <div className='mb-12'>
+    <div className='mb-12 font-exo font-bold'>
       <div className='flex items-center justify-center'>
         <div className='w-full h-[2px] bg-black'></div>
         <div className='w-[400px] px-3 py-3 text-white bg-black text-center'>НАША КОНЦЕПЦИЯ</div>

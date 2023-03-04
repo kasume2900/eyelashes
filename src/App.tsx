@@ -29,7 +29,7 @@ function App() {
       <Nav tabSelected={tabSelected} />
       <Popap tabs={tabs} active={active} tabSelected={tabSelected} />
       <Tabs active={active} tabSelected={tabSelected} />
-      <p id="about" className='py-8 text-2xl text-center'>Наши работы</p>
+      <p id="about" className='pt-6 text-2xl text-center font-exo font-bold'>Наши работы</p>
       <Slaider />
       <Concept />
      </Layout>
