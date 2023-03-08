@@ -38,7 +38,7 @@ body {
 
 html[data-theme='light'] {
   --bg-color-body : #fff;
-  --bg-color-el : #fff;
+  --bg-color-el : #F8F8F8;
   --btn-bg : #000;
   --btn-color-text : #fff;
   --color-burger : #000;
