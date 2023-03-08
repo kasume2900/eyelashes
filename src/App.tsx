@@ -29,11 +29,13 @@ function App() {
       <Nav tabSelected={tabSelected} />
       <Popap tabs={tabs} active={active} tabSelected={tabSelected} />
       <Tabs active={active} tabSelected={tabSelected} />
-      <p id="about" className='pt-6 text-2xl text-center font-exo font-bold'>Наши работы</p>
-      <Slaider />
-      <Concept />
+      <p id="about" className='pt-6 text-2xl text-center font-exo font-bold'>Мои работы</p>
      </Layout>
-      <Questions />
+      <Slaider />
+      <Layout>
+        <Concept />
+        <Questions />
+      </Layout>
       <Footer />
    </>
   )

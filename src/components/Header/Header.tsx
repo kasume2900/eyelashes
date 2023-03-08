@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import Layout from '../../Layout/Layout'
-import logo from '../../assets/logo.jpg'
 import logo1 from '../../assets/1.svg'
 import logo2 from '../../assets/2.svg'
 import s from './Header.module.scss'
@@ -65,7 +64,7 @@ export default function Header({tabSelected} :IHeaderProps) {
           <Link data-id='0' to='eyelash' onTouchStart={handleClickToTabs} spy={true} smooth={true} offset={-25} duration={500} className={s.item}>ресницы</Link>
           <Link data-id='2'  to='eyelash' onTouchStart={handleClickToTabs} spy={true} smooth={true} offset={-25} duration={500} className={s.item}>брови</Link>
           <Link data-id='3' to='eyelash' onTouchStart={handleClickToTabs} spy={true} smooth={true} offset={-25} duration={500} className={s.item}>ногти</Link>
-          <Link to='about' onTouchStart={handleClick} spy={true} smooth={true} offset={0} duration={500} className={s.item}>о нас</Link>
+          <Link to='about' onTouchStart={handleClick} spy={true} smooth={true} offset={0} duration={500} className={s.item}>обо мне</Link>
           <Link to='contacts' onTouchStart={handleClick} spy={true} smooth={true} offset={50} duration={500} className={s.item}>контакты</Link>
           <AiOutlineClose onClick={() => setActive(false)} className={s.close} />
         </div>

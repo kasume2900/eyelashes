@@ -1,10 +1,15 @@
 
 .nav {
- @apply justify-center items-center space-x-10 mt-32 hidden md:flex mb-4 ;
+ @apply justify-center items-center space-x-10 mt-32 hidden lg:flex mb-4 ;
 
 
   .item {
     @apply cursor-pointer uppercase font-bold ;
   }
 
+}
+
+
+.active {
+  @apply text-red-600 ;
 }

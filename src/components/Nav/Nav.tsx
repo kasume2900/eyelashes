@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import s from './Nav.module.scss'
 import {Link} from 'react-scroll'
 
