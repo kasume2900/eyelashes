@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Layout from '../../Layout/Layout'
 import logo from '../../assets/logo.jpg'
+import logo1 from '../../assets/1.svg'
+import logo2 from '../../assets/2.svg'
 import s from './Header.module.scss'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { AiOutlineClose } from 'react-icons/ai'
@@ -50,7 +52,7 @@ export default function Header({tabSelected} :IHeaderProps) {
       <Layout>
         <div className={s.row}>
           <div className={s.logo}>
-            <img src={logo} alt="logo" />
+            <img src={theme === 'light' ? logo1 : logo2} alt="logo" />
           </div>
           <div className={s.body}>
           <div onClick={changeTheme} className={s.icon}>{theme === 'dark' ? <BsMoonStarsFill /> : <ImSun />}</div>
