@@ -2,11 +2,11 @@
 
 .wrap {
  // @apply w-[300px] mx-auto my-10 md:w-[500px] lg:w-[700px] xl:w-full rounded-md ;
- @apply w-full mx-auto my-10 md:w-[500px] lg:w-[700px] xl:w-full rounded-md ;
+ @apply w-full mx-auto my-10 md:w-[500px] lg:w-[700px] xl:w-[1100px] rounded-md ;
 }
 
 .img {
   //@apply min-w-[300px] object-cover h-[300px] rounded-md md:min-w-[500px] md:h-[400px] lg:min-w-[700px] lg:h-[550px] xl:min-w-full xl:h-[600px] ;
-  @apply min-w-full object-cover h-[300px] rounded-md md:min-w-[500px] md:h-[400px] lg:min-w-[700px] lg:h-[550px] xl:min-w-full xl:h-[600px] ;
+  @apply min-w-full object-cover h-[300px] rounded-md md:min-w-[500px] md:h-[400px] lg:min-w-[700px] lg:h-[550px] xl:min-w-[1100px] xl:h-[600px] ;
 }
 

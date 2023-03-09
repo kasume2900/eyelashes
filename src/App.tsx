@@ -34,8 +34,8 @@ function App() {
       <Slaider />
       <Layout>
         <Concept />
-        <Questions />
       </Layout>
+        <Questions />
       <Footer />
    </>
   )
