@@ -52,6 +52,7 @@ html[data-theme='light'] {
   --bg-footer : #1d2e3f;
   --text-color-footer : #fff;
   --bg-border : #bdb4b4;
+  --footer-bg : url('./assets/footer/footer-light-image.jpg');
 }
 
 
@@ -70,4 +71,5 @@ html[data-theme='dark'] {
   --bg-footer : #041a30;
   --text-color-footer : #fff;
   --bg-border : #940e0e;
+  --footer-bg : url('./assets/footer/footer-image-dark.jpg');
 }

@@ -1,10 +1,9 @@
 
 .wrap {
-  background-color: var(--bg-footer);
   color: var( --text-color-footer);
-  @apply py-4 transition-colors duration-700;
+  background-image: var(--footer-bg);
+  @apply py-4 transition-all duration-700 bg-cover bg-no-repeat;
 }
-
 .title {
   @apply text-center mb-6 font-bold font-exo ;
 }
