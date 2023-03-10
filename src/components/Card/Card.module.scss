@@ -1,13 +1,10 @@
 
 .wrap {
-  @apply px-4 py-4 rounded-sm w-full md:w-[48%] lg:w-[30%] xl:w-[30%] 2xl:w-[24%] ;
+  @apply px-4 py-4 rounded-sm w-full md:w-[48%] lg:w-[30%] xl:w-[30%] 2xl:w-[24%] transition-colors duration-700 ;
   //background-color: var(--bg-color-el);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 20px;
-  border:1px solid rgba(255, 255, 255, 0.18);
+  background-color: transparent;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 20px;
   .image {
     @apply mb-4 ;
     img {
