@@ -55,7 +55,7 @@ html[data-theme='light'] {
   --bg-header : url('./assets/header/bg-light.jpg');
   --footer-bg : url('./assets/footer/footer-light-image.jpg');
   --question-bg : url('./assets/Queshion/bg-light.jpg');
-  --concept-bg : url('./assets/concept/bg-dark.jpg');
+  --concept-bg : url('./assets/concept/bg-light.jpg');
   --bg-wrapper : url('./assets/wrapper/bg-light.jpg');
   --shadow : 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
