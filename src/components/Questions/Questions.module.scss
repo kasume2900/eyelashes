@@ -1,7 +1,8 @@
 
 .wrap {
- background-color: var(--bg-que);
- @apply py-4 ;
+ //background-color: var(--bg-que);
+ background-image: var(--question-bg);
+ @apply py-4 bg-cover bg-no-repeat transition-all duration-700 ;
 }
 
 .title {
