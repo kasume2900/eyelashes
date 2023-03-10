@@ -3,7 +3,7 @@
   @apply bg-white px-4 py-12 shadow-md;
   //background-color: var(--bg-color-el);
   background-color: transparent;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  box-shadow: var(--shadow);
   border-radius: 20px;
 }
 
