@@ -20,7 +20,7 @@
 body {
   background-color: var( --bg-color-body);
   color: var(--text-color);
-  @apply font-roboto transition-colors duration-700;
+  @apply font-roboto ;
 }
 
 .swiper-button-next {
