@@ -30,10 +30,10 @@ function App() {
           <Nav tabSelected={tabSelected} />
           <Popap tabs={tabs} active={active} tabSelected={tabSelected} />
           <Tabs active={active} tabSelected={tabSelected} />
-          <p id="about" className='pt-6 text-2xl text-center font-exo font-bold'>Мои работы</p>
+          <p id="about" className='pt-6 pb-4 text-2xl text-center font-exo font-bold'>Мои работы</p>
         </Layout>
-      </div>
       <Slaider />
+      </div>
       <Layout>
       </Layout>
       <Concept />
