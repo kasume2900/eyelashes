@@ -79,6 +79,7 @@ html[data-theme='dark'] {
   --footer-bg : url('./assets/footer/footer-image-dark.jpg');
   --question-bg : url('./assets/Queshion/bg-dark.jpg');
   --concept-bg : url('./assets/concept/bg-dark.jpg');
+  --bg-wrapper : url('./assets/wrapper/bg-dark.jpg')
 }
 
 .wrapper {
