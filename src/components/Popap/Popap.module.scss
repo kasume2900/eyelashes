@@ -1,7 +1,7 @@
 
 
 .popapWrap {
-  @apply relative lg:hidden mt-32 md:mt-28 mb-4 ;
+  @apply relative lg:hidden pt-32 md:pt-28 mb-4 ;
 }
 
 .top {
@@ -18,7 +18,7 @@
 
 
 .bottom {
-  @apply absolute top-12 left-0 w-full border transition-colors duration-700;
+  @apply absolute top-44 left-0 w-full border transition-colors duration-700;
   border-color: var(--border-bg-red);
 
 
