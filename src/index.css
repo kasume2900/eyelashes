@@ -73,5 +73,6 @@ html[data-theme='dark'] {
   --text-color-footer : #fff;
   --bg-border : #940e0e;
   --footer-bg : url('./assets/footer/footer-image-dark.jpg');
-  --question-bg : url('./assets/Queshion/bg-dark.jpg')
+  --question-bg : url('./assets/Queshion/bg-dark.jpg');
+  --concept-bg : url('./assets/concept/bg-dark.jpg')
 }

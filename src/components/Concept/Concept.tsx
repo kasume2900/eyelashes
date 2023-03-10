@@ -1,8 +1,9 @@
 import React from 'react'
+import s from './Concept.module.scss'
 
 export default function Concept() {
   return (
-    <div className='mb-12 font-exo font-bold'>
+    <div className={s.wrap}>
       <div className='flex items-center justify-center'>
         <div className='w-full h-[2px] bg-black'></div>
         <div className='w-[400px] px-3 py-3 text-white bg-black text-center'>МОЯ КОНЦЕПЦИЯ</div>

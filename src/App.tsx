@@ -33,8 +33,8 @@ function App() {
      </Layout>
       <Slaider />
       <Layout>
-        <Concept />
       </Layout>
+        <Concept />
         <Questions />
       <Footer />
    </>
