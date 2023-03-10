@@ -1,7 +1,7 @@
 
 .header {
   background-image: var(--bg-header);
-  @apply border-b-[1px] px-2 fixed top-0 w-full z-50 transition-all duration-700 bg-cover bg-no-repeat ;
+  @apply border-b-[1px] px-2 py-2 fixed top-0 w-full z-50 transition-all duration-700 bg-cover bg-no-repeat;
   //background-color: var( --bg-color-el);
   border-color: var(--bg-border);
 }
@@ -11,7 +11,7 @@
 
   .logo {
     img {
-      @apply w-24 ;
+      @apply w-32 ;
     }
   }
 
