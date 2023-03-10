@@ -1,7 +1,8 @@
 
 .header {
-  @apply border-b-[1px] px-2 fixed top-0 w-full z-50 transition-colors duration-700 ;
-  background-color: var( --bg-color-el);
+  background-image: var(--bg-header);
+  @apply border-b-[1px] px-2 fixed top-0 w-full z-50 transition-all duration-700 bg-cover bg-no-repeat ;
+  //background-color: var( --bg-color-el);
   border-color: var(--bg-border);
 }
 
@@ -37,9 +38,10 @@
 
 
 .burgerNav {
+  background-image: var(--bg-header);
   @apply fixed top-0 right-0 left-0 bottom-0 transition-all duration-500 
-    flex flex-col items-center justify-center border-l-2 z-40 ;
-    background-color: var(--bg-color-burger);
+    flex flex-col items-center justify-center border-l-2 z-40 bg-cover bg-no-repeat ;
+    //background-color: var(--bg-color-burger);
     border-color: var(--bg-border);
 }
 

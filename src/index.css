@@ -52,8 +52,10 @@ html[data-theme='light'] {
   --bg-footer : #1d2e3f;
   --text-color-footer : #fff;
   --bg-border : #bdb4b4;
+  --bg-header : url('./assets/header/bg-light.jpg');
   --footer-bg : url('./assets/footer/footer-light-image.jpg');
-  --question-bg : url('./assets/Queshion/bg-light.jpg')
+  --question-bg : url('./assets/Queshion/bg-light.jpg');
+  --concept-bg : url('./assets/concept/bg-dark.jpg');
 }
 
 
@@ -72,7 +74,8 @@ html[data-theme='dark'] {
   --bg-footer : #041a30;
   --text-color-footer : #fff;
   --bg-border : #940e0e;
+  --bg-header : url('./assets/header/bg-dark.jpg');
   --footer-bg : url('./assets/footer/footer-image-dark.jpg');
   --question-bg : url('./assets/Queshion/bg-dark.jpg');
-  --concept-bg : url('./assets/concept/bg-dark.jpg')
+  --concept-bg : url('./assets/concept/bg-dark.jpg');
 }
