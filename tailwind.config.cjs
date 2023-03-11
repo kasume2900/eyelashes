@@ -9,7 +9,8 @@ module.exports = {
       fontFamily : {
         'roboto' : 'Roboto , sans-serif',
         'exo' : 'Exo 2 , sans-serif',
-        'lob' : 'Lobster, cursive'
+        'lob' : 'Lobster, cursive',
+        'osv' : 'Oswald, sans-serif'
       },
     },
   },

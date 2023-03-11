@@ -34,7 +34,7 @@ function App() {
           <Tabs active={active} tabSelected={tabSelected} />
           <Process />
           <Procedure />
-          <p id="about" className='pt-6 pb-4 text-2xl text-center font-exo font-bold'>Мои работы</p>
+          <p id="about" className='pt-6 pb-8 text-3xl text-center font-lob font-bold'>Мои работы</p>
         </Layout>
       <Slaider />
       </div>

@@ -1,5 +1,21 @@
 
 .wrap {
   background-image: var(--concept-bg);
-  @apply p-12 font-exo font-bold bg-cover bg-no-repeat transition-all duration-700 ;
+  @apply p-12 bg-cover bg-no-repeat transition-all duration-700 ;
+}
+
+.row {
+  @apply flex items-center justify-center ;
+}
+
+.line {
+  @apply w-full h-[2px] bg-black ;
+}
+
+.title {
+  @apply font-osv tracking-wider  w-[400px] px-3 py-3 text-white bg-black text-center ;
+}
+
+.text {
+  @apply font-lob font-bold text-center text-xl mt-8 mb-8 ;
 }
