@@ -1,0 +1,28 @@
+
+.wrap {
+  @apply justify-self-center ;
+}
+
+.row {
+  @apply relative ;
+}
+
+.image {
+  @apply w-16 h-16 rounded-full absolute top-0 left-0 ;
+  background-color: var(--bg-color-el);
+  span {
+    @apply text-2xl font-bold absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 ;
+  }
+}
+
+
+.body {
+  @apply ml-24 ;
+  .title {
+
+  }
+
+  .text {
+
+  }
+}
