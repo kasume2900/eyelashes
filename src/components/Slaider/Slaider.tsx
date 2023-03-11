@@ -14,7 +14,7 @@ export default function Slaider() {
     <div className={s.wrap}>
       <Swiper
     spaceBetween={50}
-    autoplay={{delay : 1000}}
+    autoplay={{delay : 1350}}
     slidesPerView={1}
     
     modules={[Navigation, Pagination, Scrollbar, A11y,EffectCoverflow,Autoplay]}
