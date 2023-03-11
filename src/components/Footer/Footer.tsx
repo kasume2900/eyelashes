@@ -17,11 +17,11 @@ export default function Footer() {
           </div> 
           <div className={s.contacts}>
             <p className={s.item}>Контакты</p>
-            <a href='https://api.whatsapp.com/send/?phone=79169260818&text=Здравствуйте%2C+у+меня+есть+вопрос' className={s.link}>
+            <a href='tel:+79648267111' className={s.link}>
               <BsTelephonePlusFill className={s.icon} size={30} />
               <span>Телефон</span></a>
 
-            <a href='https://api.whatsapp.com/send/?phone=79169260818&text=Здравствуйте%2C+у+меня+есть+вопрос' className={s.link}>
+            <a href='https://api.whatsapp.com/send/?phone=79648267111&text=Здравствуйте%2C+у+меня+есть+вопрос' className={s.link}>
               <SiWhatsapp className={s.icon} size={30} />
               <span>Whatsapp</span></a>
           </div> 
