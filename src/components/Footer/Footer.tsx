@@ -16,7 +16,6 @@ export default function Footer() {
             <p className={s.item}>2-этаж 18 кабинет.</p>
           </div> 
           <div className={s.contacts}>
-            <p className={s.item}>Контакты</p>
             <a href='tel:+79648267111' className={s.link}>
               <BsTelephonePlusFill className={s.icon} size={30} />
               <span>Телефон</span></a>

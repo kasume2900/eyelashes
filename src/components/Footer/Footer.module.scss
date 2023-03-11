@@ -9,9 +9,12 @@
 }
 
 .row {
-  @apply flex justify-around items-center ;
+  @apply flex flex-col space-y-4 md:flex-row md:items-center md:justify-around ;
 }
 
+.contacts {
+  @apply flex justify-between items-center md:flex-col ;
+}
 
 
 .item {
@@ -54,7 +57,7 @@
 
 
 .link {
-  @apply flex items-center justify-center mb-4  ;
+  @apply flex items-center mb-4  ;
   span {
     @apply ml-5 ;
   }
