@@ -12,7 +12,8 @@ export default function Footer() {
         <h3 className={s.title}>ЕСЛИ ОСТАЛИСЬ ВОПРОСЫ, БУДУ РАДА НА НИХ ОТВЕТИТЬ</h3>
         <div className={s.row}>
           <div className={s.adress}>
-            <p className={s.item}>Aдрес: Г. Биробиджан, ул. Сапёрная 23.</p>
+            <p className={s.item}>Aдрес: Город Биробиджан.</p>
+            <p className={s.item}>Улица Сапёрная 23.</p>
             <p className={s.item}>2-этаж 18 кабинет.</p>
           </div> 
           <div className={s.contacts}>

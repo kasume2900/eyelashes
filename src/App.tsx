@@ -28,7 +28,7 @@ function App() {
       <div className='wrapper'>
         <Layout>
           <Nav tabSelected={tabSelected} />
-          <Popap tabs={tabs} active={active} tabSelected={tabSelected} />
+          <h1 className="pt-28 mb-5 font-bold text-center text-2xl lg:pt-6">Наращивание ресниц</h1>
           <Tabs active={active} tabSelected={tabSelected} />
           <p id="about" className='pt-6 pb-4 text-2xl text-center font-exo font-bold'>Мои работы</p>
         </Layout>

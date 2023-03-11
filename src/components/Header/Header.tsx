@@ -61,9 +61,8 @@ export default function Header({tabSelected} :IHeaderProps) {
           </div>
         </div>
         <div className={`${s.burgerNav} ${active ? '' : 'translate-x-full'}`}>
-          <Link data-id='0' to='eyelash' onTouchStart={handleClickToTabs} spy={true} smooth={true} offset={-25} duration={500} className={s.item}>ресницы</Link>
-          <Link data-id='2'  to='eyelash' onTouchStart={handleClickToTabs} spy={true} smooth={true} offset={-25} duration={500} className={s.item}>брови</Link>
-          <Link to='about' onTouchStart={handleClick} spy={true} smooth={true} offset={0} duration={500} className={s.item}>обо мне</Link>
+          <Link data-id='0' to='eyelash' onTouchStart={handleClickToTabs} spy={true} smooth={true} offset={-100} duration={500} className={s.item}>ресницы</Link>
+          <Link to='about' onTouchStart={handleClick} spy={true} smooth={true} offset={-60} duration={500} className={s.item}>обо мне</Link>
           <Link to='contacts' onTouchStart={handleClick} spy={true} smooth={true} offset={50} duration={500} className={s.item}>контакты</Link>
           <AiOutlineClose onClick={() => setActive(false)} className={s.close} />
         </div>

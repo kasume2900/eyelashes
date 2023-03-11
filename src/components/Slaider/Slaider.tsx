@@ -1,7 +1,7 @@
 
 import s from './Slaider.module.scss'
 import {slaides} from '../../utils/slides'
-import { Navigation, Pagination, Scrollbar, A11y,EffectCoverflow } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y,EffectCoverflow, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/swiper-bundle.min.css'
@@ -14,8 +14,10 @@ export default function Slaider() {
     <div className={s.wrap}>
       <Swiper
     spaceBetween={50}
+    autoplay={{delay : 1000}}
     slidesPerView={1}
-    modules={[Navigation, Pagination, Scrollbar, A11y,EffectCoverflow]}
+    
+    modules={[Navigation, Pagination, Scrollbar, A11y,EffectCoverflow,Autoplay]}
     navigation
     pagination={{ clickable: true , dynamicBullets : true }}
     speed={800}

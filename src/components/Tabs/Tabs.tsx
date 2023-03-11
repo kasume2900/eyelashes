@@ -12,10 +12,8 @@ export default function Tabs({tabSelected,active} : ITabsProps) {
 
   return (
     <>
-      <div className={s.tabTop}>
-        {tabs.map((el,ind) => <div className={s.tab} onClick={() => tabSelected(ind)} key={el.filter}>{el.filter}</div>)}
-      </div>
-      <div className={s.content}>
+      
+      <div id='eyelash' className={s.content}>
           {
             tabs[active].cards.map(el => <Card key={el.title} {...el} />)
           }

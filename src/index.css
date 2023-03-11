@@ -14,7 +14,7 @@
   --bg-footer : #1d2e3f;
 
   --swiper-navigation-size : 25px;
-  --swiper-pagination-color: red;
+  --swiper-pagination-color: rgba(175, 30, 54);
 }
 
 body {
@@ -24,16 +24,14 @@ body {
 }
 
 .swiper-button-next {
-  color: red;
+  color: rgb(189, 30, 91);
 }
 .swiper-button-next ::after {
   width: 10px;
 }
 .swiper-button-prev {
-  color: red;
+  color: rgb(189, 30, 91);
 }
-
-
 
 
 
