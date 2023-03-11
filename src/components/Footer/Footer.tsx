@@ -1,6 +1,8 @@
 import React from 'react'
 import Layout from '../../Layout/Layout'
 import s from './Footer.module.scss'
+import {BsTelephonePlusFill} from 'react-icons/bs'
+import {SiWhatsapp} from 'react-icons/si'
 
 export default function Footer() {
 
@@ -8,12 +10,21 @@ export default function Footer() {
     <footer id='contacts' className={s.wrap}>
       <Layout>
         <h3 className={s.title}>ЕСЛИ ОСТАЛИСЬ ВОПРОСЫ, БУДУ РАДА НА НИХ ОТВЕТИТЬ</h3>
-        <div>
-          <a href='https://api.whatsapp.com/send/?phone=79200000000&text=Здравствуйте%2C+у+меня+есть+вопрос' className={s.item}>+79169260818 <span>(Whatsapp, Мобильный )</span></a>
-          <p className={s.item}>instagram <span>@thelashbar.ru</span></p>
-          <p className={s.item}>Наш адрес: г. Москва, м. 1905 года, ул. 2-я Звенигородская, 13с15.</p>
-          <p className={s.item}>2-этаж 8 кабинет.</p>
-          <p className={s.item}>вход с улицы 2-я Звенигородская</p>
+        <div className={s.row}>
+          <div className={s.adress}>
+            <p className={s.item}>Aдрес: Г. Биробиджан, ул. Сапёрная 23.</p>
+            <p className={s.item}>2-этаж 18 кабинет.</p>
+          </div> 
+          <div className={s.contacts}>
+            <p className={s.item}>Контакты</p>
+            <a href='https://api.whatsapp.com/send/?phone=79169260818&text=Здравствуйте%2C+у+меня+есть+вопрос' className={s.link}>
+              <BsTelephonePlusFill className={s.icon} size={30} />
+              <span>Телефон</span></a>
+
+            <a href='https://api.whatsapp.com/send/?phone=79169260818&text=Здравствуйте%2C+у+меня+есть+вопрос' className={s.link}>
+              <SiWhatsapp className={s.icon} size={30} />
+              <span>Whatsapp</span></a>
+          </div> 
         </div>
       </Layout>
     </footer>

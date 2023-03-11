@@ -8,10 +8,54 @@
   @apply text-center mb-6 font-bold font-exo ;
 }
 
+.row {
+  @apply flex justify-around items-center ;
+}
+
+
+
 .item {
-  @apply mb-2 ;
+  @apply mb-2 text-lg ;
 
   span {
     @apply ml-4 ;
+  }
+}
+
+.icon {
+  -webkit-animation: 1.2s ease-in-out 0s normal none infinite running ithone;
+    -moz-animation: 1.2s ease-in-out 0s normal none infinite running ithone;
+    -o-animation: 1.2s ease-in-out 0s normal none infinite running ithone;
+    animation: 1.2s ease-in-out 0s normal none infinite running ithone;
+  @keyframes ithone {
+    0%, 50%, 100% {
+     transform: rotate(0deg);
+     -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+     -o-transform: rotate(0deg);
+     -ms-transform: rotate(0deg);
+   }
+   10%, 30% {
+     transform: rotate(-10deg);
+     -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+     -o-transform: rotate(-10deg);
+     -ms-transform: rotate(-10deg);
+   }
+   20%, 40% {
+     transform: rotate(10deg);
+     -webkit-transform: rotate(10deg);
+     -moz-transform: rotate(10deg);
+     -o-transform: rotate(10deg);
+     -ms-transform: rotate(10deg);
+   }
+  }
+}
+
+
+.link {
+  @apply flex items-center justify-center mb-4  ;
+  span {
+    @apply ml-5 ;
   }
 }
