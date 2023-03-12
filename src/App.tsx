@@ -29,8 +29,8 @@ function App() {
       <Header tabSelected={tabSelected} />
       <div className='wrapper'>
         <Layout>
-          <Nav tabSelected={tabSelected} />
-          <h1 className="pt-28 mb-8 font-bold text-center text-3xl md:text-4xl lg:pt-6 font-lob tracking-wider">Наращивание ресниц</h1>
+        
+          <h1 className="pt-28 mb-8 font-bold text-center text-3xl md:text-4xl lg:pt-28 font-lob tracking-wider">Наращивание ресниц</h1>
           <Tabs active={active} tabSelected={tabSelected} />
           <Process />
           <Procedure />

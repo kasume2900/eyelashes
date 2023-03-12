@@ -9,6 +9,7 @@ import { Link,animateScroll } from 'react-scroll'
 import { useTheme } from '../../hooks/useTheme'
 import {BsMoonStarsFill} from 'react-icons/bs'
 import {ImSun} from 'react-icons/im'
+import Nav from '../Nav/Nav'
 
 interface IHeaderProps {
   tabSelected : (index : number) => void
@@ -56,9 +57,9 @@ export default function Header({tabSelected} :IHeaderProps) {
           <div className={s.body}>
           <div onClick={changeTheme} className={s.icon}>{theme === 'dark' ? <BsMoonStarsFill /> : <ImSun />}</div>
 
-            <a href='https://api.whatsapp.com/send/?phone=79200000000&text=Здравствуйте%2C+у+меня+есть+вопрос' className={s.btn}>Позвонить</a>
             <GiHamburgerMenu onClick={() => setActive(true)} className={s.burger} />
           </div>
+            <Nav tabSelected={tabSelected} />
         </div>
         <div className={`${s.burgerNav} ${active ? '' : 'translate-x-full'}`}>
           <Link data-id='0' to='eyelash' onTouchStart={handleClickToTabs} spy={true} smooth={true} offset={-100} duration={500} className={s.item}>ресницы</Link>

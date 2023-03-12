@@ -21,7 +21,7 @@
   }
 
   .icon {
-    @apply absolute cursor-pointer top-1/2 right-16 -translate-y-1/2 md:right-40 ;
+    @apply absolute cursor-pointer top-1/2 right-16 -translate-y-1/2 md:right-40 lg:right-0 ;
   }
 
   .btn {
@@ -33,7 +33,7 @@
 
 
 .burger {
-  @apply text-3xl md:hidden ;
+  @apply text-3xl lg:hidden ;
   color: var( --color-burger);
 }
 
