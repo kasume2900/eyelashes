@@ -5,7 +5,7 @@ import logoDark from '../../assets/logo-dark.svg'
 import s from './Header.module.scss'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { AiOutlineClose } from 'react-icons/ai'
-import { Link } from 'react-scroll'
+import { Link,animateScroll } from 'react-scroll'
 import { useTheme } from '../../hooks/useTheme'
 import {BsMoonStarsFill} from 'react-icons/bs'
 import {ImSun} from 'react-icons/im'
@@ -47,12 +47,12 @@ export default function Header({tabSelected} :IHeaderProps) {
 
 
   return (
-    <header className={s.header}>
+    <header id='top' className={s.header}>
       <Layout>
         <div className={s.row}>
-          <div className={s.logo}>
+          <Link to='top' spy={true} smooth={true} offset={0} duration={500} onClick={() => animateScroll.scrollToTop()} className={s.logo}>
             <img src={theme === 'light' ? logoLight : logoDark} alt="logo" />
-          </div>
+          </Link>
           <div className={s.body}>
           <div onClick={changeTheme} className={s.icon}>{theme === 'dark' ? <BsMoonStarsFill /> : <ImSun />}</div>
 
@@ -62,7 +62,9 @@ export default function Header({tabSelected} :IHeaderProps) {
         </div>
         <div className={`${s.burgerNav} ${active ? '' : 'translate-x-full'}`}>
           <Link data-id='0' to='eyelash' onTouchStart={handleClickToTabs} spy={true} smooth={true} offset={-100} duration={500} className={s.item}>ресницы</Link>
-          <Link to='about' onTouchStart={handleClick} spy={true} smooth={true} offset={-60} duration={500} className={s.item}>обо мне</Link>
+          <Link to='about' onTouchStart={handleClick} spy={true} smooth={true} offset={-60} duration={500} className={s.item}>мои работы</Link>
+          <Link to='process' onTouchStart={handleClick} spy={true} smooth={true} offset={-60} duration={500} className={s.item}>О наращивании</Link>
+          <Link to='question' onTouchStart={handleClick} spy={true} smooth={true} offset={-80} duration={500} className={s.item}>вопросы</Link>
           <Link to='contacts' onTouchStart={handleClick} spy={true} smooth={true} offset={50} duration={500} className={s.item}>контакты</Link>
           <AiOutlineClose onClick={() => setActive(false)} className={s.close} />
         </div>

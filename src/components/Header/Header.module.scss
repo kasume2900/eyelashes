@@ -10,6 +10,7 @@
   @apply flex justify-between items-center ; 
 
   .logo {
+    @apply cursor-pointer ;
     img {
       @apply w-36 ;
     }
@@ -51,5 +52,5 @@
 }
 
 .item {
-  @apply uppercase font-bold mb-10 ;
+  @apply uppercase font-lob font-bold mb-10 ;
 }

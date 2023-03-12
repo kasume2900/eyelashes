@@ -27,7 +27,7 @@ export default function Process() {
 
 
   return (
-    <div className={s.wrap}>
+    <div id='process' className={s.wrap}>
       <p className={s.title}>Как выглядит процесс наращивания</p>
       <div className={s.row}>
         <div className={s.card}>

@@ -26,7 +26,7 @@ export default function Questions() {
 
 
   return (
-    <div className={s.wrap}>
+    <div id='question' className={s.wrap}>
       <Layout>
         <h2 className={s.title}>Ответы на часто задаваемые вопросы</h2>
         <p className={s.text}>Если вы не нашли ответов на сайте, позвоните и получите бесплатную консультацию мастера по телефону</p>
