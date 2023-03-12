@@ -18,7 +18,7 @@
 
 
 .item {
-  @apply mb-2 text-xl ;
+  @apply mb-2 text-2xl ;
 
   span {
     @apply ml-4 ;
@@ -59,6 +59,6 @@
 .link {
   @apply flex items-center mb-4  ;
   span {
-    @apply ml-5 ;
+    @apply ml-5 text-2xl ;
   }
 }

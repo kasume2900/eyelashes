@@ -13,12 +13,12 @@
   }
 
   .title{
-    @apply text-center text-2xl font-bold mb-3 font-mork ;
+    @apply text-center text-3xl font-bold mb-3 font-mork ;
   }
   .price{
-    @apply text-center mb-3 font-mork text-2xl ;
+    @apply text-center mb-3 font-mork text-3xl ;
   }
   .description{
-    @apply text-center ;
+    @apply text-center text-2xl ;
   }
 }
