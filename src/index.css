@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Lobster&family=Oswald:wght@400;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Exo+2:wght@700&family=Lobster&family=Marck+Script&family=Oswald:wght@400;700&family=Roboto&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,7 +20,7 @@
 body {
   background-color: var( --bg-color-body);
   color: var(--text-color);
-  @apply font-roboto ;
+  @apply font-cov ;
 }
 
 .swiper-button-next {
