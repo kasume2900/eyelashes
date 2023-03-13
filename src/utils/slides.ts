@@ -4,7 +4,6 @@ import a3 from '../assets/slaiders/3.jpg'
 import a4 from '../assets/slaiders/4.jpg'
 import a5 from '../assets/slaiders/5.jpg'
 import a6 from '../assets/slaiders/6.jpg'
-import a7 from '../assets/slaiders/7.jpg'
 
 
 
@@ -38,8 +37,5 @@ export const slaides = [
     img : a6,
     id : 6
   },
-  {
-    img : a7,
-    id : 7
-  },
+  
 ]
