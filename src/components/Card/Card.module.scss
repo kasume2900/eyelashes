@@ -1,6 +1,6 @@
 
 .wrap {
-  @apply px-4 py-4 rounded-sm w-full md:w-[48%] lg:w-[30%] xl:w-[30%] 2xl:w-[24%] transition-colors duration-700 ;
+  @apply relative px-4 py-4 rounded-sm w-full md:w-[48%] lg:w-[30%] xl:w-[30%] 2xl:w-[24%] transition-colors duration-700 overflow-hidden;
   //background-color: var(--bg-color-el);
   background-color: transparent;
   box-shadow: var(--shadow);
@@ -21,4 +21,13 @@
   .description{
     @apply text-center text-2xl ;
   }
+  
+  .lent {
+    @apply absolute -top-2 -right-2 w-32 h-32 ;
+  }
+
+  .xit {
+    @apply absolute top-4 right-3 text-3xl font-lob rotate-45 ;
+  }
+  
 }
