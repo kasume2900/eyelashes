@@ -15,7 +15,7 @@ export default function Studia() {
             <img src={comfort} alt="icon" />
             <div className={s.cardBody}>
               <p className={s.cardTitle}>Комфорт и уют</p>
-              <p className={s.cardText}>Для Вас на выбор кресла-реклайнеры или ортопедические кушетки.</p>
+              <p className={s.cardText}>Для Вашего удобства анатомические подушки.</p>
               <p className={s.cardText}>Можно на 9-ом месяце беременности или с больной спиной!</p>
             </div>
           </div>
