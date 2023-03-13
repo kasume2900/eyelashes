@@ -11,6 +11,7 @@ import Questions from "./components/Questions/Questions"
 import Footer from "./components/Footer/Footer"
 import Process from "./components/Process/Process"
 import Procedure from "./components/Procedure/Procedure"
+import Studia from "./components/Studia/Studia"
 
 
 
@@ -34,6 +35,7 @@ function App() {
           <Tabs active={active} tabSelected={tabSelected} />
           <Process />
           <Procedure />
+          <Studia />
           <p id="about" className='pt-6 pb-8 text-3xl text-center font-lob font-bold'>Мои работы</p>
         </Layout>
       <Slaider />

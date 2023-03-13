@@ -1,0 +1,35 @@
+.wrap {
+  @apply py-12 ;
+}
+
+.title {
+  @apply text-center font-lob text-3xl font-bold py-10 ;
+}
+
+
+.row {
+  @apply flex flex-col lg:flex-row lg:space-x-10 lg:items-center xl:space-x-12;
+  .image {
+    @apply w-full mb-10 lg:w-1/2 ;
+  }
+
+  .body {
+    @apply w-full ;
+
+    .card {
+      @apply flex mb-10 ;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .cardBody {
+        .cardTitle {
+          @apply text-3xl font-mork font-bold mb-2 ;
+        }
+        .cardText {
+          @apply text-xl mb-2 ;
+        }
+      }
+
+    }
+  }
+}
