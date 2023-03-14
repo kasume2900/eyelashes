@@ -62,6 +62,7 @@ html[data-theme='light'] {
   --concept-bg : url('./assets/concept/bg-light.jpg');
   --bg-wrapper : url('./assets/wrapper/bg-light.jpg');
   --shadow : 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --color-nav : rgb(103, 21, 196);
 }
 
 
@@ -86,9 +87,14 @@ html[data-theme='dark'] {
   --concept-bg : url('./assets/concept/bg-dark.jpg');
   --bg-wrapper : url('./assets/wrapper/bg-dark.jpg');
   --shadow : 0 8px 32px 0 rgba(187, 187, 194, 0.9);
+  --color-nav : aqua;
 }
 
 .wrapper {
   background-image : var(--bg-wrapper);
   @apply bg-cover bg-no-repeat transition-all duration-700 ;
+}
+
+.active {
+  color: var(--color-nav);
 }

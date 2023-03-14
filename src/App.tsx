@@ -36,7 +36,7 @@ function App() {
           <Process />
           <Procedure />
           <Studia />
-          <p id="about" className='pt-6 pb-8 text-3xl text-center font-lob font-bold'>Мои работы</p>
+         
         </Layout>
       <Slaider />
       </div>
