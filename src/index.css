@@ -13,8 +13,8 @@
   --bg-que : #efefef;
   --bg-footer : #1d2e3f;
 
-  --swiper-navigation-size : 25px;
-  --swiper-pagination-color: rgba(175, 30, 54);
+  --swiper-navigation-size : 10px;
+  --swiper-pagination-color: #d81476;
 }
 
 body {
@@ -24,15 +24,21 @@ body {
 }
 
 .swiper-button-next {
-  color: rgb(189, 30, 91);
-}
-.swiper-button-next ::after {
-  width: 10px;
-}
-.swiper-button-prev {
-  color: rgb(189, 30, 91);
+  @apply w-8 h-8 rounded-full text-xs ;
+  background-color: #978e8e;
+  color: #000;
 }
 
+.swiper-button-prev {
+  @apply w-8 h-8 rounded-full text-xs ;
+  background-color: #978e8e;
+  color: #000;
+}
+
+.swiper-pagination span {
+  width: 12px;
+  height: 12px;
+}
 
 
 html[data-theme='light'] {
